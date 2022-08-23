@@ -45,6 +45,11 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+h1 {
+  text-align: center;
+}
+
 </style>
 
 <style>
@@ -138,6 +143,12 @@ body {
     @media only screen and (max-width: 300px) {
       .prev, .next,.text {font-size: 11px}
     }
+
+    .table2 {
+    position:absolute;
+    margin-left: 15%;
+}
+
     </style>
 
 </head>
@@ -148,13 +159,12 @@ body {
             <td style="vertical-align:top">
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Contact</a>
+                    <a href="#">Add AQI data by form</a>
+                    <a href="#">Add Route AQI data by form</a>
+                    <a href="#">Add AQI data by CSV</a>
+                    <a href="#">Add AQI data by CSV</a>
+                    <a href="#">Give feedback</a>
+                    <a href="#">Get Report</a>
                   </div>
                   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
@@ -184,25 +194,136 @@ body {
                     <a class="next" onclick="plusSlides(1)">❯</a>
                     
                     </div>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                      </div>
             </td>
         </tr>
     </table>
 
 
+    <div class="table2">
+        <table style="width:99%; border: 1px solid black">
+            <tr>
+                <td >
+                    <select name="division" id="divison">
+                        <option value="dhaka">dhaka</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Barisal">Barisal</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Chittagong">Chittagong</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Rajshah">Rajshah</option>
+                    </select>
+                </td>
+            </tr>
 
-
-
-    <br>
+            <tr>
+                <td>
+                    <h3>Air pollution Level</h3>
+                </td>
+                <td>
+                    <h3>
+                        Air quality index
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        Main pollutant
+                    </h3>
+                  
+                </td>
+            </tr>
     
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
+            <tr>
+                <td>
+                    <p id="aplId"> put aqi here</p>
+                </td>
+                <td>
+                    <p id="aqiId">
+                        put air quality index here
+                    </p>
+                </td>
+                <td>
+                    <p id="mpId">
+                        put main pollutant here
+                    </p>
+                </td>
+                
+            </tr>
+    
+        </table>
+    
+        
+        <table style="width:99%; border: 1px solid black">
+            <tr>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_1.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_2.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_3.png" alt="">
+                    </a>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_4.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_5.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_6.png" alt="">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_8.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_9.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.google.com">
+                        <img src="Images/Screenshot_9.png" alt="">
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+        <h1>------- END ------</h2>
     </div>
+    
+   
+
+    
 
 
-<h2>Animated Sidenav Example</h2>
-<p>Click on the element below to open the side navigation menu.</p>
+
 
 
 <script>
